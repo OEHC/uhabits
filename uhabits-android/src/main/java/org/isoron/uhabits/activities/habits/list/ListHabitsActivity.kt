@@ -50,7 +50,6 @@ class ListHabitsActivity : HabitsActivity() {
         // added
         DateUtils.setFirstWeekDay(prefs.firstWeekDay)
         DateUtils.setNewDayOffset(prefs.dayHourOffset)
-
     }
 
     override fun onPause() {

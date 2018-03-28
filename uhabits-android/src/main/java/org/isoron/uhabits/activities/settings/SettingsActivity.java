@@ -38,16 +38,17 @@ public class SettingsActivity extends BaseActivity implements SharedPreferences.
     private SharedPreferences prefs;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
         setupActionBarColor();
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
         prefs.registerOnSharedPreferenceChangeListener(this);
-
     }
 
-    private void setupActionBarColor() {
+    private void setupActionBarColor()
+    {
         StyledResources res = new StyledResources(this);
         int color = BaseScreen.getDefaultActionBarColor(this);
 
