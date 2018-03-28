@@ -286,7 +286,8 @@ public class FrequencyChart extends ScrollableChart
         initRects();
     }
 
-    private void initFirstWeekDay() {
+    private void initFirstWeekDay()
+    {
         HabitsApplication app = (HabitsApplication) getContext().getApplicationContext();
         Preferences prefs = app.getComponent().getPreferences();
     }

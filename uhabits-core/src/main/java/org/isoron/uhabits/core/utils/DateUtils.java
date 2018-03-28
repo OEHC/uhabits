@@ -251,13 +251,14 @@ public abstract class DateUtils
         MONTH, WEEK_NUMBER, YEAR, QUARTER
     }
 
-    public static void setNewDayOffset(int offset){
+    public static void setNewDayOffset(int offset)
+    {
         NEW_DAY_OFFSET = offset;
 
     }
 
-    public static void setFirstWeekDay(int firstWeekDay){
+    public static void setFirstWeekDay(int firstWeekDay)
+    {
         FIRST_WEEK_DAY = firstWeekDay;
     }
-
 }

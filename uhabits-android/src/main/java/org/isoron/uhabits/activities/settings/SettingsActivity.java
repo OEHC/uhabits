@@ -33,8 +33,8 @@ import org.isoron.uhabits.core.utils.DateUtils;
 /**
  * Activity that allows the user to view and modify the app settings.
  */
-public class SettingsActivity extends BaseActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
-
+public class SettingsActivity extends BaseActivity implements SharedPreferences.OnSharedPreferenceChangeListener
+{
     private SharedPreferences prefs;
 
     @Override
@@ -59,25 +59,33 @@ public class SettingsActivity extends BaseActivity implements SharedPreferences.
     }
 
     @Override
-    public void onSharedPreferenceChanged(SharedPreferences sharedPref, String key) {
+    public void onSharedPreferenceChanged(SharedPreferences sharedPref, String key)
+    {
         SharedPreferences.Editor editor = sharedPref.edit();
-        if (key.equalsIgnoreCase("pref_new_day_offset")) {
-
+        if (key.equalsIgnoreCase("pref_new_day_offset"))
+        {
             int dayHourOffset = 0;
-            try {
+            try
+            {
                 dayHourOffset = Integer.parseInt(sharedPref.getString(key, "0"));
                 DateUtils.setNewDayOffset(dayHourOffset);
-            } catch (NumberFormatException e) {
+            }
+            catch (NumberFormatException e)
+            {
                 e.printStackTrace();
             }
 
-        } else if (key.equalsIgnoreCase("pref_first_week_day")){
-
+        }
+        else if (key.equalsIgnoreCase("pref_first_week_day"))
+        {
             int firstWeekDay = 0;
-            try {
+            try
+            {
                 firstWeekDay = Integer.parseInt(sharedPref.getString(key, "0"));
                 DateUtils.setFirstWeekDay(firstWeekDay);
-            } catch (NumberFormatException e) {
+            }
+            catch (NumberFormatException e)
+            {
                 e.printStackTrace();
             }
         }

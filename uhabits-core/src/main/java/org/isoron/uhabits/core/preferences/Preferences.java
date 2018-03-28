@@ -145,11 +145,13 @@ public class Preferences
         return Long.parseLong(storage.getString("pref_snooze_interval", "15"));
     }
 
-    public int getFirstWeekDay() {
+    public int getFirstWeekDay()
+    {
         Calendar calendar = new GregorianCalendar();
         return Integer.parseInt(storage.getString("pref_first_week_day", String.valueOf(calendar.getFirstDayOfWeek())));
     }
-    public int getDayHourOffset() {
+    public int getDayHourOffset()
+    {
         return Integer.parseInt(storage.getString("pref_new_day_offset", "-15"));
     }
 

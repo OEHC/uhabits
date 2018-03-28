@@ -109,7 +109,7 @@
             android:entryValues="@array/days_values"
             android:key="pref_first_week_day"
             android:summary="%s"
-            android:title="@string/pref_first_week_day_title" />
+            android:title="@string/pref_first_week_day_title"/>
 
         <ListPreference
             android:defaultValue="@string/day_hour_offset_default"
@@ -118,7 +118,7 @@
             android:entryValues="@array/hours_values"
             android:key="pref_new_day_offset"
             android:summary="%s"
-            android:title="@string/pref_new_day_offset_title" />
+            android:title="@string/pref_new_day_offset_title"/>
     </PreferenceCategory>
 
     <PreferenceCategory
